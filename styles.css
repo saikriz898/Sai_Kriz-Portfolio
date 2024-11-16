@@ -740,16 +740,14 @@ header .logo a{
           .scroll-button:hover{
             background-color: #ddd;
           }
-          .back-menu{
-            background-color: white;
-          }
           .back-menu ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
           }
           .back-menu{
-            background-color:crimson;
+            background-color: #000;
+            color: white;
             padding-top: 20px;
             padding-bottom: 20px;
           }
@@ -761,13 +759,13 @@ header .logo a{
           }
           
           .back-menu li a {
-            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
           }
           .back-menu a{
-            color: white;
+            color: black;
+            background-color: wheat;
             text-align: left;
             padding: 14px 16px;
             text-decoration: none;
@@ -778,13 +776,13 @@ header .logo a{
             border-radius: 30%;
           }
         .back-menu a:hover{
-            background-color: #ddd;
-            color: black;
+            background-color: black;
+            color: white;
             transition: 0.5s ease-in-out;
           }
           @media (max-width: 600px) {
             .back-menu{
-              background-color: blueviolet;
+              background-color:black;
             }
             .back-menu li {
                 padding: 5px;
@@ -798,8 +796,8 @@ header .logo a{
                 bottom: 10px;
                 right: 10px;
                 cursor: pointer;
-                background-color: #000;
-                color: white;
+                background-color: blue;
+                color: red;
                 padding: 10px 15px;
                 border-radius: 50%;
                 transition: background-color 0.3s;
@@ -807,10 +805,11 @@ header .logo a{
               }
               .scroll-button:hover{
                 background-color: #ddd;
+                color: red;
               }
               .back-menu a{
                 padding-bottom: 100px;
-                color: white;
+                color: black;
                 text-align: left;
                 padding: 14px 16px;
                 text-decoration: none;

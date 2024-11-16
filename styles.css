@@ -40,13 +40,14 @@ header .logo a{
     }
     padding: 20px;
 }
-
+.closebtn{
+  display: none;
+}
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid white;
     background-color: blue;
     border-style: hidden;
     background: scroll;
@@ -63,14 +64,32 @@ header .logo a{
     color: white;
     text-align: center;
     padding: 14px 16px;
-    border:1px solid white;
     text-decoration: none;
-    background-color: brown;
   }
 .menu a:hover{
     background-color: #ddd;
     color: black;
     transition: 0.5s ease-in-out;
+  }
+  .menu-icon{
+    display: none;
+  }
+  @media screen and (max-width: 700px) {
+    .menu{
+      display: none;
+    }
+   .menu-icon{
+      display: block;
+    }
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      color: red;
+    }
+    .menu-icon:hover{
+      color: blue;
+      transition: 0.5s ease-in-out;
+    }
   }
   .home{background-image: url(img/home-bg.jpeg);
     background-repeat: no-repeat;
@@ -108,17 +127,6 @@ header .logo a{
     flex: 1 1 40rem;
     padding-top: 1rem;
     z-index: 1;
-  }
-  .menu a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .menu a:hover {
-    background-color: #ddd;
-    color: black;
   }
   
   /* Style the active link (or home/logo) */
@@ -174,6 +182,7 @@ header .logo a{
   .home .image {
     flex: 1 1 40rem;
     z-index: 1;
+    
   }
   .home .image img {
     width: 70%;
@@ -187,7 +196,7 @@ header .logo a{
   .about-button{
     border: none;
     cursor: pointer;
-    padding-left: 45%;
+    padding-left: -100%;
   }
   .about-button a{
     text-decoration: none;
@@ -196,6 +205,12 @@ header .logo a{
     border: 2px solid black;
     border-radius: 30%;
     padding: 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px red;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
    .about-button a:hover{
       background: black;
@@ -221,7 +236,6 @@ header .logo a{
     .about-button{
       border: none;
       cursor: pointer;
-      padding-left: 45%;
     }
     .about-button a{
       text-decoration: none;
@@ -230,6 +244,12 @@ header .logo a{
       border: 2px solid black;
       border-radius: 30%;
       padding: 20px;
+      transition: 0.5s ease-in-out;
+      box-shadow: 2px 2px 5px red;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;  
     }
      .about-button a:hover{
         background: black;
@@ -268,33 +288,44 @@ header .logo a{
     object-fit: cover;
   }
   .paragraph{
-    padding: 30px;
-    background: yellowgreen;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-align: justify;
-    margin: 1rem 0;
-    border: 2px solid black;
-  }
-  .box{
-    border: 2px solid black;
-    padding: 10px;
-    margin: 1rem 0;
-    border-radius: 5px;
-    background-color: black;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
     color: white;
-    display: flex;
+    background-color: black;
+    border-radius: 10px;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid white;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  .contact-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid white;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
   }
   .resume-button{
     border: none;
     cursor: pointer;
-    padding-left: 45%;
+    padding-left: -100%;
   }
   .resume-button a{
     text-decoration: none;
@@ -303,6 +334,12 @@ header .logo a{
     border: 2px solid black;
     border-radius: 30%;
     padding: 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px red;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
    .resume-button a:hover{
       background: black;
@@ -331,16 +368,27 @@ header .logo a{
     font-weight: bold;
     border: #000 2px solid;
     background-color: black;
+    transition: 0.5s;
   }
   .progress-bar-item{
-    background-color: purple;
-    color: white;
-    border: 2px double #000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    gap: 20px;
     padding: 40px;
-  }
-  .icon{
-    margin-right: 10px;
-    font-size: 100px;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid white;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      background-color: black;
+    }
+
   }
   div.progress-bar-title{
     padding: 20px;
@@ -350,28 +398,34 @@ header .logo a{
     font-weight: bold;
   }
   div.progress-bar-percentage{
-    padding: 20px;
+    padding: 10px;
     color: yellow;
     background-color: blue;
     border-radius: 100px;
     text-align: center;
     color: black;
     font-weight: bold;
+    border: 2px solid white;
   }
   .bxl-python{
     color:blue;
+    font-size: 500%;
   }
   .bxl-c-plus-plus
   {
+    font-size: 500%;
     color:darkblue;
   }
   .bxl-javascript{
+    font-size: 500%;
     color:yellow;
   }
   .bxl-html5{
+    font-size: 500%;
     color:red;
   }
   .bxl-css3{
+    font-size: 500%;
     color:greenyellow;
   }
   .skills-content{
@@ -405,11 +459,27 @@ header .logo a{
     border: 1px solid #000;
     background-color: #000;
     color: white;
+    gap: 20px;
+    padding: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid white;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      background-color: red;
+      color: black;
+    }
   }
   .certificate-button{
     border: none;
     cursor: pointer;
-    padding-left: 45%;
+    padding-left: -100%;
   }
   .certificate-button a{
     text-decoration: none;
@@ -418,12 +488,18 @@ header .logo a{
     border: 2px solid black;
     border-radius: 30%;
     padding: 20px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px red;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
    .certificate-button a:hover{
       background: black;
       color: #fff;
     }
-    @media (max-width: 1294px){
+    @media (max-width: 1300px){
         .skills h2{
             font-size: 1.5rem;
           }
@@ -432,9 +508,6 @@ header .logo a{
           }
           .progress-bar-item{
             padding: 10px;
-          }
-         .icon{
-          font-size: 70px;
           }
           div.progress-bar-title{
             padding: 10px;
@@ -489,9 +562,11 @@ header .logo a{
           }
           .college{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             border: 2px solid black;
             box-sizing: border-box;
+            background-color: #000;
+            
           }
           .college img{
             width: 400px;
@@ -501,23 +576,26 @@ header .logo a{
           .college p{
             text-align: center;
             padding: 40px;
-            color: black;
+            color: white;
+            border: 2px solid black;
+            padding-left: 32%;
           }
           .school p{
             text-align: center;
-            color: black;
-            padding: 40px;
+            color: white;
+            padding: 50px;
           }
           .school{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             border: 2px solid black;
+            background-color: #000;
             box-sizing: border-box;
           }
           .school img{
             width: 400px;
             height: 200px;
-            border: #000 2pt solid;;
+            border: #000 2pt solid;
           }
           @media (max-width: 800px){
             .education h2{
@@ -526,19 +604,23 @@ header .logo a{
              .college{
                 flex-direction: column;
               }
+              .college p{
+                font-size: 40%;
+                padding-right: 30%;
+              }
              .college img{
-                width: 100px;
-                height: 100px;
+                width: 100%;
+                height: 100%;
               }
               .school p{
-                font-size: 1rem;
+                font-size: 10px;
               }
              .school{
                 flex-direction: column;
               }
              .school img{
-                width: 100px;
-                height: 100px;
+                width: 100%;
+                height: 100%;
               }
           }
           .contact{
@@ -563,6 +645,14 @@ header .logo a{
             display: flex;
             flex-direction: column;
             padding: 100px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: 2px solid white;
+            position: relative;
+           
           }
           .contact-info-text p{
             padding: 20px;
@@ -609,76 +699,32 @@ header .logo a{
             }
           }
           footer{
-            background-image: url(img/footer\,bg.jpeg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            padding: 50px;
-            display: flex;
-            justify-content: space-evenly;
+            background-color: black;
             color: white;
-          }
-          .quick-link{
-            padding-top: 50px;
-            font-size: 20px;
             text-align: center;
+          }
+          .social{
+            font-size: 40px;
             text-decoration: none;
-          }
-          .quick-link li{
-            text-decoration: none;
-            padding: 10px;
-            margin: 10px;
-            list-style-type: none;
-            transition: 0.5s;
-          }
-          .quick-link ul li:hover{
-            background-color: green;
             color: white;
-            transition: 0.5s;
           }
-          
-          .quick-link ul li a{
+          .social a{
             color: white;
-            text-decoration: none;
-            transition: 0.5s;
           }
-          .box{
-            display: grid;
+          .social a:hover {
+            color: #fff;
           }
-          .box a{
-            color:blue;
+          .social a.github:hover {
+            color: #0e0e0e;
           }
-          .box a:hover{
-            transition: 0.5s;
+          .social a.twitter:hover {
+            color: #00aced;
           }
-          .share{
-            padding-top: 50px;
-            font-size: 20px;
+          .social a.linkedin:hover {
+            color: #007bb6;
           }
-          .copyright{
-            text-align: center;
-            padding-bottom: 50px;
-            font-size: 30px;
-            padding-top: 20px;
-            color: white;
-            background-color: black;;
-          }
-          @media (max-width: 1000px){
-            footer{
-              flex-direction: column;
-              align-items: center;
-            }
-            footer.box{
-              grid-template-columns: 1fr;
-              grid-gap: 20px;
-            }
-            footer.box a{
-              text-align: center;
-            }
-            footer.share{
-              padding-top: 0;
-              font-size: 16px;
-            }
+          .social a.instagram:hover {
+            color: #ee00da;
           }
           .scroll-button{
             position: fixed;
@@ -693,4 +739,91 @@ header .logo a{
           }
           .scroll-button:hover{
             background-color: #ddd;
+          }
+          .back-menu{
+            background-color: white;
+          }
+          .back-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          .back-menu{
+            background-color:crimson;
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .back-menu li {
+            display:inline-flex;
+            padding: 14px 16px;
+            padding-left: 150px;
+            transition: background-color 0.3s;
+          }
+          
+          .back-menu li a {
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          .back-menu a{
+            color: white;
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.5s ease-in-out;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 30%;
+          }
+        .back-menu a:hover{
+            background-color: #ddd;
+            color: black;
+            transition: 0.5s ease-in-out;
+          }
+          @media (max-width: 600px) {
+            .back-menu{
+              background-color: blueviolet;
+            }
+            .back-menu li {
+                padding: 5px;
+                padding-top: 30px;
+                padding-bottom: 60px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+              }
+              .scroll-button{
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                cursor: pointer;
+                background-color: #000;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 50%;
+                transition: background-color 0.3s;
+                padding-bottom: 10px;
+              }
+              .scroll-button:hover{
+                background-color: #ddd;
+              }
+              .back-menu a{
+                padding-bottom: 100px;
+                color: white;
+                text-align: left;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: 0.5s ease-in-out;
+                background-color: white;
+                border: 1px solid black;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 30%;
+              }
+              .back-menu a:hover{
+                background-color: black;
+                color: white;
+                transition: 0.5s ease-in-out;
+              }
           }

@@ -565,11 +565,11 @@ header .logo a{
             justify-content: space-between;
             border: 2px solid black;
             box-sizing: border-box;
-            background-color: #000;
-            &:hover{
-              background-color: white;
-              color: #000;             
-            }
+            cursor: pointer;
+          }
+          .college:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           }
           .college img{
             width: 400px;
@@ -594,10 +594,14 @@ header .logo a{
             border: 2px solid black;
             background-color: #000;
             box-sizing: border-box;
-            &:hover{
-              background-color: white;
-              color: #000; 
-            } 
+            cursor: pointer;
+            transition: 0.5s;
+          }
+          .school:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            background-color: red;
+            color: white;
           }
           .school img{
             width: 400px;

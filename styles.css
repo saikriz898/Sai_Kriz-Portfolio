@@ -564,21 +564,27 @@ header .logo a{
             display: flex;
             justify-content: space-between;
             border: 2px solid black;
+            background-color: #000;
             box-sizing: border-box;
             cursor: pointer;
+            transition: 0.5s;
           }
           .college:hover{
             transform: scale(1.05);
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            background-color: red;
+            color: white;
+
           }
           .college img{
             width: 400px;
             height: 200px;
             border: #000 2pt solid;
           }
-          .college p{
+          .college p{ 
             text-align: center;
             padding: 40px;
+            font-size: 20px;
             color: white;
             border: 2px solid black;
             padding-left: 32%;

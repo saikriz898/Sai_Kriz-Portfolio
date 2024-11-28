@@ -165,6 +165,7 @@ header {
       transition: 0.5s ease-in-out;
     }
 }
+/*home*/
 section.home{
   display:flex;
   justify-content: center;
@@ -237,6 +238,120 @@ section.home{
 .social-icons a.instagram:hover {
   background-color: #ee00da;
 }
+/*about*/
+
+section.about{
+  background-color:#35A79C ;
+}
+.about-content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  padding: 20px;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+  background-color:#35A79C ;
+}
+.about-content img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.about-content .paragraph{
+  background-color: #2E4057;
+  padding: 10px;
+}
+.about-content p{
+  text-align: justify;
+  color: white;
+  padding-right: 50px;
+  background-color: #007bb6;
+  border-radius: 10px;
+  padding: 10px;
+}
+.contact-box{
+  background-color: #2E4057;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  
+}
+.contact-box h3{
+  text-align: center;
+}
+.contact-box p{
+  text-align: center;
+  padding: 5px;
+}
+.contact-box p span{
+  padding: 20px;
+}
+.resume-button{
+  padding-left: 500px;
+}
+.resume-button a{
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+.resume-button a:hover{
+  background-color: red;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .about-content{
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  .about-content img{
+    width: 100%;
+  }
+  .about-content .paragraph{
+    padding: 10px;
+  }
+  .about-content p{
+    padding: 10px;
+  }
+  .contact-box{
+    padding: 10px;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contact-box h3{
+    text-align: center;
+  }
+  .contact-box p{
+    text-align: center;
+    font-size: 10px;
+  }
+  .contact-box p span{
+    padding: 20px;
+  }
+  .resume-button{
+    padding-left: 0;
+  }
+  .resume-button a{
+    width: 100%;
+  }
+}
+/*skills*/
+
 /*footer*/
 .social{
   font-size: 40px;

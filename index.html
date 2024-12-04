@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false">
     <header id="head" class="head">
         <button class="open-btn" onclick="toggleSidebar()">☰</button>
         <div class="logo"><h2>Sai-Portfolio</h2></div>
@@ -27,7 +27,6 @@
                 <li><a href="#education"><svg class="feather feather-book" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Education<i class="bx bx-chevron-down"></i></a></li>
                 <li><a href="#project"><i class="fas fa-code"></i>Project<i class="bx bx-chevron-down"></i></a></li>
                 <li><a href="#contact"><svg class="feather feather-mail" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="resume/SAI resume.pdf" target="_blank">Resume <i class="bx bx-chevron-right"></i></a></li>
                 </ul>
             </div>
           </div>
@@ -50,20 +49,40 @@
               </div>
             </div>
         </section>
-        <section class="about" id="about" >
-        <h2 class="heading" style="text-align: center; padding-top: 50px; color: black;"> <svg class="feather feather-user" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>About <span>Me</span></h2>
-        <div class="about-content">
-            <div class="profile" >
-                <img src="photos/profile.jpg" alt="Profile">
+        <section class="about" id="about">
+            <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+            
+            <div class="row">
+        
+            <div class="image">
+                <img draggable="false" class="tilt" src="./photos/profile.jpg" alt="">
             </div>
-            <div>
-                <p>Hello, my name is Sai Krishnan.Currently I'm pursuing my Under Grduation in Computer Science and Engineering in Sri eshwar college of engineering,I've developed skills in Programing language like C,C++,Python etx...,I am very passionate about improving my coding skills and developing websites.I am always open for new opportunities and learning new things.</p>
+            <div class="content">
+                <h3>I'm Sai Krishnan</h3>
+                <span class="tag">Engineering Student</span>
+                
+                <p>Hello,I'm Sai Krishnan.Currently I'm pursuing my Under Grduation in Computer Science and Engineering in Sri eshwar college of engineering,I've developed skills in Programing language like C,C++,Python etx...,I am very passionate about improving my coding skills and developing websites.I am always open for new opportunities and learning new things. </p>
+                
+                <div class="box-container">
+                   <div class="box">
+                      <p><span> age: </span> 18</p>
+                      <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+                    </div> 
+                    <div class="box">
+                      <p><span> email : </span>saikrishnan.s2024cse@sece.ac.in</p>
+                      <p><span> place : </span> Pollachi, India - 642006</p>
+                    </div>
+                </div>
+                
+                <div class="resumebtn">
+                    <a href="resume/SAI resume.pdf" target="_blank" class="btn"><span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+        
             </div>
-            <div class="resume-button">
-                <a href="resume/SAI resume.pdf" download class="resume">Resume <i class="bx bxs-cloud-download"></i></a>
             </div>
-        </div>
-    </section>
+        </section>
     <section id="skills" class="skills">
       <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills and <span>Abilities</span></h2>
       <div class="progress-bar">
@@ -115,24 +134,7 @@
               <p>I have proficiency in English,Hindi,and Tamil. I can speak and write in these languages fluently.</p>
               <h3>Databases:</h3>
               <p>I have experience in using MySQL databases. I can create, read, update, and delete data from these databases.</p>
-              
           </div>
-  </section>
-  <section class="certificate" id="certificate"></section>
-  <section class="project" id="project">
-    <h2 class="heading" style="padding: 50px;"><i class="fas fa-code"></i> Projects <span>I've worked on</span></h2>
-    <div class="project-content">
-        <div class="project-item">
-            <div class="project-image">
-                <img src="img/project/image.png" alt="Project 1">
-            </div>
-            <div class="project-description">
-                <h3>Createathon-2024</h3>
-                <p>This is a simple web page made using HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/saikriz898/Createathon-2024" target="_blank">View Code</a>
-            </div>
-        </div>
-        </div>
   </section>
   <section id="education" class="education">
     <h2 class="heading" style="padding: 50px;"><i class="fas fa-graduation-cap"></i> <svg class="feather feather-book" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Education</h2>
@@ -153,45 +155,61 @@
                 <p class="pa">PKD Matriculation Higher Secondary School <br>HSC and SSLC   <br>2022 - 2024
                    <br> completed
                 <br><a href="https://www.justdial.com/Pollachi/PKD-Matric-Higher-Secondary-School-Achipatti/9999P4259-4259-170925193949-D9S8_BZDET" target="_blank">View School</a></p>
-              
             </div>
     </div>
 </section>
-<section id="contact" class="contact" style="padding-top: 20px; padding-bottom: 80px;">
-    <h2 class="heading" style="text-align: center; color: black;"><i class="fas fa-address-book"></i> Contact <span>Me<i class="bx bx-message-rounded"></i></span></h2>
-    <div class="contact-content" style="padding-top: 80px;">
-        <div class="contact-info">
-            <p>Phone: +91 XXXXXXXXXXX</p>
-            <p>Email: saikrishnan.s2024cse@sece.ac.in</p>
-            <p>Address: Pollachi, India - 642006</p>
+<section class="project" id="project">
+    <h2 class="heading" style="padding: 50px;"><i class="fas fa-code"></i> Projects <span>I've worked on</span></h2>
+    <div class="project-content">
+        <div class="project-item">
+            <div class="project-image">
+                <img src="img/project/image.png" alt="Project 1">
+            </div>
+            <div class="project-description">
+                <h3>Createathon-2024</h3>
+                <p>This is a simple web page made using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/saikriz898/Createathon-2024" target="_blank">View Code</a>
+            </div>
         </div>
-        <div class="contact-image">
-            <img src="img" alt="">
         </div>
-    </div>
-    <div class="contact-form">
-        <form >
-            <h3>Drop me a line<i class="bx bx-message-rounded"></i></h3>
-             <form id="contactForm" onsubmit="submitForm(event)">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="Phone-number">Phone Number</label>
-        <input type="text" name="Phone-number" id="Phone" required>
-        <label for="feedback">Feedback</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-        <div id="successMessage" class="success-message">
-          Your form has been successfully submitted. Thank you!
+  </section>
+  <section class="contact" id="contact">
+  
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="img/contact1.png" alt="">
         </div>
-        <div id="errorMessage" class="error-message">
-          There was an error submitting your form. Please try again.
-        </div><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+      <form id="contact-form">
+        
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+          <textarea placeholder="Message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
+          </div>
+          </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
       </form>
     </div>
-</section>
+    </div>
+  </section>
         <footer>
           <div class="copyright">
               <p>&copy; 2024 Sai Krishnan. All rights reserved.</p>

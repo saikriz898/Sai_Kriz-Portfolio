@@ -78,7 +78,7 @@ display: none;
 .close-btn{
   display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px)  and (max-width:1024px){
   header {
     position: fixed;
     top: 0;

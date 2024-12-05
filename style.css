@@ -225,7 +225,7 @@ section.home{
   cursor: pointer;
   width: 150px;
   text-align: center;
-  border-radius: 15px 50px;
+  font-size: 12px;
 }
 .about-button a:hover{
   background-color: red;
@@ -271,9 +271,6 @@ section.home{
     }
     .home.content h2 span{
       font-size: 20px;
-    }
-    .about-button a{
-      width: 100%;
     }
     .social-icons{
       margin-top: 0;
@@ -659,7 +656,7 @@ div.progress-bar-percentage{
     padding: 10px;
   }
   .college a{
-    width: 100%;
+    width: 80%;
   }
   .school{
     display: block;
@@ -671,6 +668,9 @@ div.progress-bar-percentage{
   }
   .school p{
     padding: 10px;
+  }
+  .school a{
+    width: 80%;
   }
 }
 /*projects*/
@@ -772,6 +772,11 @@ section.project{
 .contact {
   background: #e5ecfb;
   min-height: 60vh;
+}
+.heading{
+  text-align: center;
+  padding: 20px;
+  color: black;
 }
 .contact .container {
   max-width: 1050px;

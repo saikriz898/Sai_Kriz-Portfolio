@@ -94,7 +94,7 @@ display: none;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
   }
   .logo h2{
-    color: white;
+    color: black;
     width: calc(100% - 100px);
     height: auto;
     padding-left: 100px;

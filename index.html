@@ -3,227 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sai-Portfolio</title>
     <link rel="shortcut icon" href="img/Logo.PNG" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="asserts/css/style.css">
 </head>
-<body oncontextmenu="return false">
+<body>
     <header id="head" class="head">
-        <button class="open-btn" onclick="toggleSidebar()">☰</button>
-        <div class="logo"><h2>Sai-Portfolio</h2></div>
-          <!-- Left Sidebar -->
-          <div class="sidebar" id="mySidebar">
-              <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
-              <div class="menu" id="myLinks">
-                <ul class="nav-content">
-                    <li><a href="#home"><svg class="feather feather-home" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="#about"><svg class="feather feather-user" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>About<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="#skills"><svg class="feather feather-tool" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Skills<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="#education"><i class="fas fa-graduation-cap"></i>Education<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="#project"><i class="fas fa-code"></i>Project<i class="bx bx-chevron-down"></i></a></li>
-                <li><a href="#contact"><svg class="feather feather-mail" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact<i class="bx bx-chevron-down"></i></a></li>
-                </ul>
-            </div>
-          </div>
-        </header>
-        <section class="home" id="home">
-            <div class="content">
-            <h2>Hi!<br/> I'm Sai <span>Krishnan</span></h2>
-            <p>I am a Web Developer</p>
-            <div class="socials">
-                <div class="about-button">
-                    <a href="#about">About<i class="bx bx-chevron-down"></i></a> <br><br>
-                </div>
-                <div class="social-icon">
-                  <ul class="social-icons">
-                    <li><a class="linkedin"  href="https://www.linkedin.com/in/sai-krishnan-s-1506b3332" target="_blank"><i class="bx bxl-linkedin"></i></a></li> 
-                    <li><a class="github"  href="https://github.com/saikriz898" target="_blank"><i class="bx bxl-github"></i></a></li>
-                    <li><a class="instagram"  href="https://www.instagram.com/sai__kriz/#"><i class="bx bxl-instagram" target="_blank"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </section>
-        <section class="about" id="about">
-            <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-            
-            <div class="row">
-        
-            <div class="image">
-                <img draggable="false" class="tilt" src="./photos/profile.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>I'm Sai Krishnan</h3>
-                <span class="tag">Engineering Student</span>
-                
-                <p>Hello,I'm Sai Krishnan.Currently I'm pursuing my Under Grduation in Computer Science and Engineering in Sri eshwar college of engineering,I've developed skills in Programing language like C,C++,Python etx...,I am very passionate about improving my coding skills and developing websites.I am always open for new opportunities and learning new things. </p>
-                
-                <div class="box-container">
-                   <div class="box">
-                      <p><span> age: </span> 18</p>
-                      <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-                    </div> 
-                    <div class="box">
-                      <p><span> email : </span>saikrishnan.s2024cse@sece.ac.in</p>
-                      <p><span> place : </span> Pollachi, India - 642006</p>
-                    </div>
-                </div>
-                
-                <div class="resumebtn">
-                    <a href="resume/SAI resume.pdf" target="_blank" class="btn"><span>Resume</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-        
-            </div>
-            </div>
-        </section>
-    <section id="skills" class="skills">
-      <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills and <span>Abilities</span></h2>
-      <div class="progress-bar">
-              <div class="progress-bar-item">
-                  <div class="bx bxl-html5">
-                  </div>
-                  <div class="progress-bar-title">HTML</div>
-                  <div class="progress-bar-percentage">95%</div>
-              </div>
-              <div class="progress-bar-item">
-                  <div class="bx bxl-css3">
-                  </div>
-                  <div class="progress-bar-title">CSS</div>
-                  <div class="progress-bar-percentage">90%</div>                    
-              </div>
-              <div class="progress-bar-item">
-                  <div class="bx bxl-javascript">
-                      <i class=""></i>
-                  </div>
-                  <div class="progress-bar-title">JavaScript</div>
-                  <div class="progress-bar-percentage">85%</div>
-              </div>
-              <div class="progress-bar-item">
-                  <div class="icon">
-                      <i class="bx bxl-c-plus-plus"></i>
-                  </div>
-                  <div class="progress-bar-title">C</div>
-                  <div class="progress-bar-percentage">80%</div>
-              </div>
-              <div class="progress-bar-item">
-                  <div class="icon">
-                      <i class="bx bxl-c-plus-plus"></i>
-                  </div>
-                  <div class="progress-bar-title">C++</div>
-                  <div class="progress-bar-percentage">70%</div>
-              </div>
-              <div class="progress-bar-item">
-                  <div class="icon">
-                      <i class="bx bxl-python"></i>
-                  </div>
-                  <div class="progress-bar-title">Python</div>
-                  <div class="progress-bar-percentage">65%</div>
-              </div>
-          </div>
-          <div class="skills-content">
-              <h3>Tools And Frameworks:</h3>
-              <p>I have experience in using various tools and frameworks such as HTML, CSS, JavaScript, Bootstrap. I also have knowledge of version control systems like Git.</p>
-              <h3>Languages:</h3>
-              <p>I have proficiency in English,Hindi,and Tamil. I can speak and write in these languages fluently.</p>
-              <h3>Databases:</h3>
-              <p>I have experience in using MySQL databases. I can create, read, update, and delete data from these databases.</p>
-          </div>
-  </section>
-  <section id="education" class="education">
-    <h2 class="heading" style="padding: 50px;"><i class="fas fa-graduation-cap"></i>Education</h2>
-    <p style="padding: 20px; text-align: center; color: wheat;">Education is one thing no one can take away from you</p>
-    <div class="education-content">
-        <div class="college">           
-             <img src="img/education/college.jpg" alt="Sri eshwar">
-            <p>
-                Sri eshwar College of Engineering <br> Bachelor of engineering in Computer Science and Engineering
-                <br>2024 - 2028
-               <br> continuing
-               <br><a href="https://sece.ac.in/" target="_blank">View College</a>
-            </p>
-            
+        <div class="logo">
+            <img src="asserts/img/logo.png" alt="SaiKriz">
         </div>
-            <br><div class="school">            
-                <img src="img/education/school.jpg" alt="PKD">
-                <p class="pa">PKD Matriculation Higher Secondary School <br>HSC and SSLC   <br>2022 - 2024
-                   <br> completed
-                <br><a href="https://www.justdial.com/Pollachi/PKD-Matric-Higher-Secondary-School-Achipatti/9999P4259-4259-170925193949-D9S8_BZDET" target="_blank">View School</a></p>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li style="font-size: 15px;"><a href="#home">Home</a></li>
+                <li style="font-size: 15px;"><a href="about.html">About</a></li>
+                <li style="font-size: 15px;"><a href="skill.html">Skills</a></li>
+                <li style="font-size: 15px;"><a href="education.html">Education</a></li>
+                <li style="font-size: 15px;"><a href="project.html">Project</a></li>
+                <li style="font-size: 15px;"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+        <h2>Hi!<br/> I'm Sai <span>Krishnan</span></h2>
+        <p>I am a Web Developer</p>
+        <div class="socials">
+            <div class="about-button">
+                <a href="about.html">About</a> <br>
             </div>
-    </div>
-</section>
-<section class="project" id="project">
-    <h2 class="heading" style="padding: 50px;"><i class="fas fa-code"></i> Projects <span>I've worked on</span></h2>
-    <div class="project-content">
-        <div class="project-item">
-            <div class="project-image">
-                <img src="img/project/image.png" alt="Project 1">
+            <div class="social-icon">
+              <ul class="social-icons">
+                <li><a class="linkedin"  href="https://www.linkedin.com/in/sai-krishnan-s-1506b3332" target="_blank"><i class="bx bxl-linkedin"></i></a></li> 
+                <li><a class="github"  href="https://github.com/saikriz898" target="_blank"><i class="bx bxl-github"></i></a></li>
+                <li><a class="instagram"  href="https://www.instagram.com/sai__kriz/#"><i class="bx bxl-instagram" target="_blank"></i></a></li>
+              </ul>
             </div>
-            <div class="project-description">
-                <h3>Createathon-2024</h3>
-                <p>This is a simple web page made using HTML, CSS, and JavaScript.</p>
-                <a href="https://github.com/saikriz898/Createathon-2024" target="_blank">View Code</a>
-            </div>
+          </div>
         </div>
-        </div>
-  </section>
-  <section class="contact" id="contact">
-  
-    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-  
-    <div class="container">
-      <div class="content">
-        <div class="image-box">
-          <img draggable="false" src="img/contact1.png" alt="">
-        </div>
-      <form id="contact-form">
-        
-        <div class="form-group">
-          <div class="field">
-            <input type="text" name="name" placeholder="Name" required>
-            <i class='fas fa-user'></i>
-          </div>
-          <div class="field">
-            <input type="text" name="email" placeholder="Email" required>
-            <i class='fas fa-envelope'></i>
-          </div>
-          <div class="field">
-            <input type="text" name="phone" placeholder="Phone">
-            <i class='fas fa-phone-alt'></i>
-          </div>
-          <div class="message">
-          <textarea placeholder="Message" name="message" required></textarea>
-          <i class="fas fa-comment-dots"></i>
-          </div>
-          </div>
-        <div class="button-area">
-          <button type="submit">
-            Submit <i class="fa fa-paper-plane"></i></button>
-        </div>
-      </form>
-    </div>
-    </div>
-  </section>
-        <footer>
-          <div class="copyright">
-              <p>&copy; 2024 Sai Krishnan. All rights reserved.</p>
-            </div>
-            <div class="social">
-              <a class="linkedin"  href="https://www.linkedin.com/in/sai-krishnan-s-1506b3332" target="_blank"><i class="bx bxl-linkedin"></i></a> 
-                <a class="github"  href="https://github.com/saikriz898" target="_blank"><i class="bx bxl-github"></i></a>
-                <a class="instagram"  href="https://www.instagram.com/sai__kriz/#"><i class="bx bxl-instagram" target="_blank"></i></a>
-            </div>
-            <div class="scroll-button">
-              <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-          </div>
-  </footer>
-            <script src="index.js"></script>
-
+    </section>
 </body>
 </html>
